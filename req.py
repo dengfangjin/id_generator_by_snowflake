@@ -24,3 +24,14 @@ url = r'http://127.0.0.1:8000/idgen'
 for i in range(10):
     res = requests.get(url)
     print(res.text)
+#  并发：
+
+#%%
+import grequests
+urls = [r'http://127.0.0.1:8000/idgen'] * 1000
+req = [grequests.get(url) for url in urls]
+res_g = grequests.map(req, size=100)
+for r in res_g:
+    print(r.text, bin(int(r.text)))
+
+
