@@ -1,1 +1,0 @@
-nohup python start_snowflake.py >snowflake.log &
