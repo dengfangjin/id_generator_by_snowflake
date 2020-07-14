@@ -1,0 +1,11 @@
+*.iml
+/id-generator/.idea
+*.class
+target/
+.project
+.settings/
+.classpath
+*/target
+/id-generator-interface/
+/id-generator-core/
+/id-generator/
