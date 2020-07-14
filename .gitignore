@@ -6,6 +6,10 @@ target/
 .settings/
 .classpath
 */target
-/id-generator-interface/
-/id-generator-core/
-/id-generator/
+
+/id-generator_example/
+
+.idea
+.gitignore
+
+
